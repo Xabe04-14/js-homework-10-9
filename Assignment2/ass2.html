@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="ass2.css">
+</head>
+<body>
+    <div class="container">
+        <form name="frm">
+            <p>
+                <label>
+                    Product Name:<input type="text" name="pname" id="pname">
+                </label>
+            </p>
+            <p>
+                <label>
+                    Product Quantity:<input type="text" name="qty" id="qty">
+                </label>
+            </p>
+            <p>
+                <label>
+                    Product Price:<input type="text" name="price" id="price">
+                </label>
+            </p>
+            <p class="btn">
+                <button type="button" onclick="Add()">Add</button>
+            </p>
+        </form>
+        <table id="tbl">
+            <thead>
+                <tr>
+                    <th>No</th>
+                    <th>Name</th>
+                    <th>Quantity</th>
+                    <th>Price</th>
+                    <th>SubTotal</th>
+                </tr>
+            </thead>
+            <tbody id="tbody">
+
+            </tbody>
+            <tfoot>
+                <tr id="totalRow">
+                    <td colspan="4">Total</td>
+                    <td id="Total"></td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+    <script src="ass2.js"></script>
+</body>
+</html>
